@@ -1,5 +1,5 @@
 require('dotenv').config()
-
+const User = require("../../models/models")
 const GoogleStrategy = require("passport-google-oauth2").Strategy;
 
 
@@ -9,9 +9,17 @@ const google = new GoogleStrategy({
   clientSecret:process.env.GOOGLE_CLIENT_SECRET,
   callbackURL:`http://localhost:${process.env.PORT}/api/google/callback`,
   passReqToCallback:true,
-},(request,accessToken,refreshToken,profile,done)=>{
-    console.log("Google profile:",profile)
-    done(null,profile)
+}, async function(request, accessToken, refreshToken, profile, done) {
+  const user = User.findOne({googleId:profile.id})
+  if(!user){
+    const newUser = newUser({
+      googleId:profile.id,
+      email:profile.email,
+      username:profile.displayName
+    })
+    await newUser.save()
+  }
+  return done(null, profile);
 })
 
 module.exports = google

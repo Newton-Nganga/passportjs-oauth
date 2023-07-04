@@ -1,5 +1,5 @@
 const passport = require("passport")
-
+const User = require("../models/models")
 require('dotenv').config()
 
 const google = require("./strategies/googleStrategy")
@@ -16,7 +16,11 @@ passport.serializeUser(function(user,done){
 
 //deserialize the user
 passport.deserializeUser(function(user,done){
+    // User.findById(id,(err,doc)=>{
+    //   done(null,doc)  
+    // })
     done(null,user)
+    
 })
 
 //google instance
@@ -24,6 +28,6 @@ passport.use(google)
 //facebook instance
 passport.use(facebook)
 //twitter instance
-//passport.use(twitter)
+passport.use(twitter)
 //linkedin instance
 // passport.use(linkedin)

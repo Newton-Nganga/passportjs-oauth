@@ -1,13 +1,15 @@
 const express = require("express");
 const controllers = require("./controllers/controller.js");
 const passport = require("passport");
-require('./Passport/passport-setup.js')
+require("./Passport/passport-setup.js");
 const router = express.Router();
 
 router.get("/", controllers.apiPage);
+router.get("/logout", controllers.logout);
+
+
 
 router.get("/failed", (req, res) => res.send("Failed : You failed to login"));
-
 
 router.get("/success", (req, res) => {
   console.log(req.user?.photos[0].value);
@@ -20,51 +22,41 @@ router.get("/success", (req, res) => {
   });
 });
 
-router.get("/test", (req, res) => {
-  res.status(404).json({ message: "Test api hit" });
+//Profile
+router.get("/profile", (req, res) => {
+  console.log("--->(/profile) ", req.user);
+  res.render("profile", {
+    // profile: "Facebook",
+    // name: req.user.displayName,
+    // pic: req.user.photos[0].value,
+    // email: req.user.emails[0].value,
+    profile:req.user
+  });
 });
 
-
-//Profile
-router.get('/profile',(req,res)=>{
-    console.log("--->(/profile) ",req.user)
-    res.render('/pages/profile',{
-        profile:"Facebook",
-        name:req.user.displayName,
-        pic:req.user.photos[0].value,
-        email:req.user.emails[0].value
-    })
-})
-
-
-
-
 //Google
-router.get(
-    "/auth/google",
-    passport.authenticate("google", { scope: ["profile","email"] })
-  );
+router.get("/auth/google",passport.authenticate("google", { scope: ["profile","email"] }));
 
 router.get(
-  "google/callback",
+  "/google/callback",
   passport.authenticate("google", {
-    successRedirect: "/profile",
-    successMessage: "Google strategy was a success",
-    failureRedirect: "/failed",
+    failureRedirect: "/",
     failureMessage: "Google strategy coundn't log you in",
-  }),(req,res)=>{
-    res.redirect('/success')
+  }),
+  (req, res) => {
+    console.log("profile",req.user)
+    res.redirect("/api/profile");
   }
 );
 
 //Facebook
 router.get(
-    "/auth/facebook",
-    passport.authenticate("facebook", { scope: "email" })
-  );
+  "/auth/facebook",
+  passport.authenticate("facebook", { scope: "email" })
+);
 
 router.get(
-  "facebook/callback",
+  "/facebook/callback",
   passport.authenticate("facebook", {
     successRedirect: "/profile",
     successMessage: "Facebook strategy was a success",
