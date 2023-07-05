@@ -10,7 +10,7 @@ router.get("/logout", controllers.logout);
 router.get("/failed", (req, res) => res.send("Failed : You failed to login"));
 
 router.get("/success", (req, res) => {
-  console.log(req.user?.photos[0].value);
+  //console.log(req.user?.photos[0].value);
 
   res.render("pages/profile", {
     name: req.user.displayName,
@@ -22,11 +22,12 @@ router.get("/success", (req, res) => {
 
 //Profile
 router.get("/profile", (req, res) => {
-  console.log("--->( your profile) ", req.user);
-  const pic = "";
+  //console.log("--->( your profile) ", req.user);
+  let pic = "";
   if (req.user.picture) {
     pic = req.user.picture;
-  } else if (req.user.profile_image_url) {
+  }
+  if (req.user.profile_image_url) {
     pic = req.user.profile_image_url;
   }
   res.render("profile", {
@@ -53,7 +54,7 @@ router.get(
     failureMessage: "Google strategy coundn't log you in",
   }),
   (req, res) => {
-    console.log("profile", req.user);
+    //console.log("profile", req.user);
     res.redirect("/api/profile");
   }
 );
