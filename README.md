@@ -11,55 +11,55 @@
 
 
 ## Folder structure
-:open_file_folder: vscode <br>
-:open_file_folder: controllers <br>
-                   :page_facing_up: controller.js <br>
-:open_file_folder: models <br>
-                  :page_facing_up: models.s <br>
-:open_file_folder: Passport <br>
-                   :open_file_folder: strategies <br>
+:open_file_folder: vscode 
+:open_file_folder: controllers
+                   :page_facing_up: controller.js
+:open_file_folder: models 
+                  :page_facing_up: models.s
+:open_file_folder: Passport
+                   :open_file_folder: strategies 
                                      :page_facing_up: facebookStrategy.js <br>
                                      :page_facing_up: googleStrategy.js <br>
                                      :page_facing_up: linkedinStrategy.js <br>
                                      :page_facing_up: twitterStrategy.js <br>
-                   :page_facing_up: passport-setip.js <br>
-:open_file_folder: public <br>
-                   :open_file_folder: css <br>
-                                     :page_facing_up: styles.css <br>
-                   :open_file_folder: images <br>
-                   :open_file_folder: js <br>
-                                      :page_facing_up: script.js <br>
-:open_file_folder: utils <br>
-                   :page_facing_up: middlewares.js <br>
-:open_file_folder: views <br>
-                   :open_file_folder: partials <br>
-                   :page_facing_up: 404.ejs <br>
-                   :page_facing_up: index.ejs <br>
-                   :page_facing_up: profile.ejs <br>
-:page_facing_up: db.js <br>
-:page_facing_up: router.js <br>
-:page_facing_up: package.json <br>
-:page_facing_up: server.js <br>
+                   :page_facing_up: passport-setip.js 
+:open_file_folder: public 
+                   :open_file_folder: css 
+                                     :page_facing_up: styles.css 
+                   :open_file_folder: images 
+                   :open_file_folder: js 
+                                      :page_facing_up: script.js 
+:open_file_folder: utils 
+                   :page_facing_up: middlewares.js 
+:open_file_folder: views 
+                   :open_file_folder: partials 
+                   :page_facing_up: 404.ejs 
+                   :page_facing_up: index.ejs 
+                   :page_facing_up: profile.ejs 
+:page_facing_up: db.js
+:page_facing_up: router.js 
+:page_facing_up: package.json 
+:page_facing_up: server.js 
 
 
 ## Usage
 
-For local Use <br>
+For local Use 
 
-Preliquisites : <br>
-:point_right: node version 18.16.x <br>
-:point_right: nodemon globally installed <br>
+Preliquisites : 
+:point_right: node version 18.16.x 
+:point_right: nodemon globally installed
 
-clone this github repo <br>
-`git clone https://github.com/Newton-Nganga/passportjs-oauth ` <br>
-Install the require modules and depencies <br>
-`npm install ` <br>
-Add the environment variables <br>
-`create a .env file and add the required environment variables ` <br>
-Run the application using nodemon <br>
-`npm start` <br>
-Building the application for production <br>
-`npm run build ` <br>
+clone this github repo 
+`git clone https://github.com/Newton-Nganga/passportjs-oauth ` 
+Install the require modules and depencies 
+`npm install ` 
+Add the environment variables 
+`create a .env file and add the required environment variables `
+Run the application using nodemon 
+`npm start` 
+Building the application for production 
+`npm run build ` 
 
 
 For testing visit `https://connect-me-bywn.onrender.com/api`
