@@ -1,11 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect Me</title>
+<%- include('./partials/header'); %>  
+<title>Connect Me</title>
 </head>
 <body>
-    <h1>Welcome to the landing page</h1>
+    <section class="blur">
+<div class="login-card">
+      <div class="image">
+        <div class="image-holder"></div>
+      </div>
+      <div class="form-el">
+        <p class="connect">Connect Me</p>
+    <p class="form-header">Welcome Back</p>
+    <form class="input-form">
+        <input type="text" class="input" placeholder="Username"/>
+        <input type="password" class="input" placeholder="Your password"/>
+        <button class="signin">sign in</button>
+    </form>
+    <div class="break"><hr class="hr"> or <hr class="hr" /></div>
+    <p class="or">signin with</p>
+    
+    <a href="/api/auth/google" class="social-btn">
+      <img src="/api/static/images/google.png" alt="google" class="social-logo">
+      <span>Google</span>
+    </a>
+    <a href="/api/auth/facebook" class="social-btn fb">
+      <img src="/api/static/images/facebook.png" alt="facebook" class="social-logo">
+      <span>Facebook</span>
+    </a>
+    <a href="/api/auth/twitter" class="social-btn">
+      <img src="/api/static/images/twitter.png" alt="twitter" class="social-logo">
+      <span>Twitter</span>
+    </a>
+   </div>
+    </div>
+    </section>
+    
+ 
 </body>
 </html>

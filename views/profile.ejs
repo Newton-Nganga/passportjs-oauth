@@ -10,8 +10,14 @@
 
 <title>Connect Me</title>
 </head>
-<body>
-   Kudos! You are in 
-   profile:
+<body >
+   <% if(profile){ %>
+   <div class="profilebody">
+    <img src="<%=profile.picture %>" class="profile-pic"/>
+    <p>username : <%= profile.userName %></p>
+    <p>email: <%= profile.email %></p>
+    <p>provider:<%= profile.provider %></p>
+   </div>
+   <% } %>
 </body>
 </html>
