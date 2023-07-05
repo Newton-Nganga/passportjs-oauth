@@ -12,12 +12,12 @@
 </div>
 
 ## Usage
-For local Use
+For local Use <br>
 
-preliquisites :
+preliquisites : <br>
 - node version 18.16.x
 - nodemon globally installed
-  
+  <br>
 > git clone https://github.com/Newton-Nganga/passportjs-oauth
 > npm install
 > npm start
