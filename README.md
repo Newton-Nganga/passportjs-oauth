@@ -17,18 +17,22 @@
 For local Use 
 
 Preliquisites : 
-- node version 18.16.x
-- nodemon globally installed
+:point_right: node version 18.16.x
+:point_right: nodemon globally installed
 
 clone this github repo
+`git clone https://github.com/Newton-Nganga/passportjs-oauth `
+Install the require modules and depencies
+`npm install `
+Add the environment variables
+`create a .env file and add the required environment variables `
+Run the application using nodemon
+`npm start`
+Building the application for production
+`npm run build `
 
-> git clone https://github.com/Newton-Nganga/passportjs-oauth <br>
-> npm install <br>
-> npm start <br>
-> npm run build - to build the project for production <br>
-> create a .env file and add the required environment variables <br>
 
-For testing visit https://connect-me-bywn.onrender.com/api
+For testing visit `https://connect-me-bywn.onrender.com/api`
 
 ## Screensnap of the tesing site
 ![Connect Me](https://github.com/Newton-Nganga/passportjs-oauth/assets/93589514/9b2145f4-2bb2-4942-82be-fbe9c08349da)
