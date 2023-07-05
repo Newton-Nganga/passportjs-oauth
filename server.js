@@ -42,7 +42,7 @@ app.use(passport.session());
 
 //Api routes
 app.use("/api/", router);
-
+app.get("/",(req,res)=>res.redirect("/api"))
 app.get("*", (req, res) => {
   res.status(404).render("404");
 });
