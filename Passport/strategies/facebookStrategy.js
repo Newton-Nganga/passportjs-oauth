@@ -8,7 +8,8 @@ const FacebookStrategy= require("passport-facebook").Strategy
 const facebook = new FacebookStrategy({
   clientID:process.env.FACEBOOK_APP_ID,
   clientSecret:process.env.FACEBOOK_APP_SECRET,
-  callbackURL:`/api/facebook/callback`,
+  callbackURL:`${process.env.URL}/api/facebook/callback`,
+  proxy:true
   // profileFields:['id','displayName','name','gender','picture.type(large)','email']
 },async(token,refreshToken,profile,done)=>{
   const user = User.findOne({facebookId:profile.id})

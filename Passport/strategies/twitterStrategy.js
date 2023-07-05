@@ -5,7 +5,7 @@ const TwitterStrategy = require("passport-twitter").Strategy;
 const twitter = new TwitterStrategy({
     consumerKey: process.env.TWITTER_CONSUMER_KEY,
     consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
-    callbackURL: `/api/twitter/callback`,
+    callbackURL: `${process.env.URL}/api/twitter/callback`,
   },async(accessToken,refreshToken, tokenSecret, profile, done) => {
     const user = User.findOne({twitterIdId:profile.id})
     if(!user){
