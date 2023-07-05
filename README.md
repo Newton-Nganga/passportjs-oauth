@@ -5,7 +5,7 @@
 
 ## Tech stack used
 
-<div width="100%>
+<div width="100%">
 <img src="https://litslink.com/wp-content/uploads/2020/12/node.js-logo-image.png" alt="nodejs" align="left" width="100px" height="100px">
 <img src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="mongodb" align="left" width="100px" height="100px">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="express js" align="left" width="100px" height="100px">
