@@ -10,17 +10,23 @@
 <img src="https://www.svgrepo.com/show/373574/ejs.svg" alt="ejs" align="left" width="150px" height="100px"> 
 
 <br>
+
+
 ## Usage
+
 For local Use 
+
 Preliquisites : 
 - node version 18.16.x
 - nodemon globally installed
-  
-> git clone https://github.com/Newton-Nganga/passportjs-oauth
-> npm install
-> npm start
-> npm run build - to build the project for production
-> create a .env file and add the required environment variables
+
+clone this github repo
+
+> git clone https://github.com/Newton-Nganga/passportjs-oauth <br>
+> npm install <br>
+> npm start <br>
+> npm run build - to build the project for production <br>
+> create a .env file and add the required environment variables <br>
 
 For testing visit https://connect-me-bywn.onrender.com/api
 
