@@ -11,37 +11,44 @@
 
 
 ## Folder structure
-:open_file_folder: vscode 
-:open_file_folder: controllers
-                   :page_facing_up: controller.js
-:open_file_folder: models 
-                  :page_facing_up: models.s
-:open_file_folder: Passport
-                   :open_file_folder: strategies 
-                                     :page_facing_up: facebookStrategy.js <br>
-                                     :page_facing_up: googleStrategy.js <br>
-                                     :page_facing_up: linkedinStrategy.js <br>
-                                     :page_facing_up: twitterStrategy.js <br>
-                   :page_facing_up: passport-setip.js 
-:open_file_folder: public 
-                   :open_file_folder: css 
-                                     :page_facing_up: styles.css 
-                   :open_file_folder: images 
-                   :open_file_folder: js 
-                                      :page_facing_up: script.js 
-:open_file_folder: utils 
-                   :page_facing_up: middlewares.js 
-:open_file_folder: views 
-                   :open_file_folder: partials 
-                   :page_facing_up: 404.ejs 
-                   :page_facing_up: index.ejs 
-                   :page_facing_up: profile.ejs 
-:page_facing_up: db.js
-:page_facing_up: router.js 
-:page_facing_up: package.json 
-:page_facing_up: server.js 
+```bash
+.
+├── controllers
+│   └── controller.js
+├── db.js
+├── models
+│   └── models.js
+├── package.json
+├── package-lock.json
+├── Passport
+│   ├── passport-setup.js
+│   └── strategies
+│       ├── facebookStrategy.js
+│       ├── googleStrategy.js
+│       ├── linkedinStrategy.js
+│       └── twitterStrategy.js
+├── public
+│   ├── css
+│   │   └── styles.css
+│   ├── images
+│   │   ├── background.jpg
+│   │   ├── facebook.png
+│   │   ├── google.png
+│   │   ├── linkedin.png
+│   │   └── twitter.png
+│   └── js
+├── routers.js
+├── server.js
+├── utils
+│   └── middlewares.js
+└── views
+    ├── 404.ejs
+    ├── index.ejs
+    ├── partials
+    │   └── header.ejs
+    └── profile.ejs
 
-
+```
 ## Usage
 
 For local Use 
