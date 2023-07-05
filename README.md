@@ -7,7 +7,7 @@
 <img src="https://litslink.com/wp-content/uploads/2020/12/node.js-logo-image.png" alt="nodejs" align="left" width="150px" height="100px">
 <img src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="mongodb" align="left" width="150px" height="100px">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="express js" align="left" width="150px" height="100px">
-<img src="https://www.svgrepo.com/show/373574/ejs.svg" alt="ejs" align="left" width="150px" height="100px"> <br>
+<img src="https://www.svgrepo.com/show/373574/ejs.svg" alt="ejs" align="left" width="150px" height="100px">    
 
 
 ## Folder structure
@@ -57,19 +57,19 @@ Preliquisites :
 :point_right: node version 18.16.x 
 :point_right: nodemon globally installed
 
-clone this github repo 
-`git clone https://github.com/Newton-Nganga/passportjs-oauth ` 
-Install the require modules and depencies 
-`npm install ` 
-Add the environment variables 
-`create a .env file and add the required environment variables `
-Run the application using nodemon 
-`npm start` 
-Building the application for production 
-`npm run build ` 
+clone this github repo   
+`git clone https://github.com/Newton-Nganga/passportjs-oauth `   
+Install the require modules and depencies  
+`npm install `   
+Add the environment variables   
+`create a .env file and add the required environment variables `  
+Run the application using nodemon   
+`npm start`   
+Building the application for production   
+`npm run build `   
 
 
-For testing visit `https://connect-me-bywn.onrender.com/api`
+For testing visit `https://connect-me-bywn.onrender.com/api`  
 
 ## Screensnap of the tesing site
 ![Connect Me](https://github.com/Newton-Nganga/passportjs-oauth/assets/93589514/9b2145f4-2bb2-4942-82be-fbe9c08349da)
