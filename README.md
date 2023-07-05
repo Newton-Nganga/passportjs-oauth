@@ -54,15 +54,23 @@ Preliquisites :
 :point_right: nodemon globally installed  
 
 clone this github repo   
-`git clone https://github.com/Newton-Nganga/passportjs-oauth `   
+```sh
+git clone https://github.com/Newton-Nganga/passportjs-oauth
+```   
 Install the require modules and depencies  
-`npm install `   
+```sh
+npm install
+```   
 Add the environment variables   
 `create a .env file and add the required environment variables `  
 Run the application using nodemon   
-`npm start`   
+```sh
+npm start
+```   
 Building the application for production   
-`npm run build `   
+```sh 
+npm run build
+```   
 
 
 For testing visit `https://connect-me-bywn.onrender.com/api`  
