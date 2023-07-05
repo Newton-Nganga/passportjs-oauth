@@ -51,11 +51,11 @@
 ```
 ## Usage
 
-For local Use 
+For local Use   
 
-Preliquisites : 
-:point_right: node version 18.16.x 
-:point_right: nodemon globally installed
+Preliquisites :   
+:point_right: node version 18.16.x   
+:point_right: nodemon globally installed  
 
 clone this github repo   
 `git clone https://github.com/Newton-Nganga/passportjs-oauth `   
