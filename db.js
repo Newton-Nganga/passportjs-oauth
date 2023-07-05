@@ -1,13 +1,10 @@
 const mongoose =require('mongoose')
-const username = "connectmeadmin";
-const password = "6aeDYGtwWMsK5IqQ";
-const cluster = "cluster0.vioyh3p";
-const dbname = "ConnectMe";
+require('dotenv').config()
 
 
  const connection =async() => { 
     await mongoose.connect(
-    `mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER}.mongodb.net/${process.env.DB_DBNAME}?retryWrites=true&w=majority`,
     
      {
       useNewUrlParser: true,
