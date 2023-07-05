@@ -6,7 +6,7 @@ const LinkedInStrategy = require("passport-linkedin-oauth2").Strategy
 const linkedin = new LinkedInStrategy({
   clientID:process.env.LINKEDIN_CLIENT_ID,
   clientSecret:process.env.LINKEDIN_CLIENT_SECRET,
-  callbackURL:`http://localhost:${process.env.PORT}/linkedin/callback`,
+  callbackURL:`/linkedin/callback`,
   scope:['r_emailaddress','r_liteprofile']
 },(token,tokenSecret,profile,done)=>{
     
