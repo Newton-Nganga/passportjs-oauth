@@ -7,47 +7,46 @@
 <img src="https://litslink.com/wp-content/uploads/2020/12/node.js-logo-image.png" alt="nodejs" align="left" width="150px" height="100px">
 <img src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="mongodb" align="left" width="150px" height="100px">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="express js" align="left" width="150px" height="100px">
-<img src="https://www.svgrepo.com/show/373574/ejs.svg" alt="ejs" align="left" width="150px" height="100px"> 
+<img src="https://www.svgrepo.com/show/373574/ejs.svg" alt="ejs" align="left" width="150px" height="100px"> <br>
 
-<br>
 
 ## Folder structure
-:open_file_folder: vscode
-:open_file_folder: controllers
-                   :page_facing_up: controller.js
-:open_file_folder: models
-                  :page_facing_up: models.s
-:open_file_folder: Passport
-                   :open_file_folder: strategies
-                                     :page_facing_up: facebookStrategy.js
-                                     :page_facing_up: googleStrategy.js
-                                     :page_facing_up: linkedinStrategy.js
-                                     :page_facing_up: twitterStrategy.js
-                   :page_facing_up: passport-setip.js
-:open_file_folder: public
-                   :open_file_folder: css
-                                     :page_facing_up: styles.css
-                   :open_file_folder: images
-                   :open_file_folder: js
-                                      :page_facing_up: script.js
-:open_file_folder: utils
-                   :page_facing_up: middlewares.js
-:open_file_folder: views
-                   :open_file_folder: partials
-                   :page_facing_up: 404.ejs
-                   :page_facing_up: index.ejs
-                   :page_facing_up: profile.ejs
-:page_facing_up: db.js
-:page_facing_up: router.js
-:page_facing_up: package.json
-:page_facing_up: server.js
+:open_file_folder: vscode <br>
+:open_file_folder: controllers <br>
+                   :page_facing_up: controller.js <br>
+:open_file_folder: models <br>
+                  :page_facing_up: models.s <br>
+:open_file_folder: Passport <br>
+                   :open_file_folder: strategies <br>
+                                     :page_facing_up: facebookStrategy.js <br>
+                                     :page_facing_up: googleStrategy.js <br>
+                                     :page_facing_up: linkedinStrategy.js <br>
+                                     :page_facing_up: twitterStrategy.js <br>
+                   :page_facing_up: passport-setip.js <br>
+:open_file_folder: public <br>
+                   :open_file_folder: css <br>
+                                     :page_facing_up: styles.css <br>
+                   :open_file_folder: images <br>
+                   :open_file_folder: js <br>
+                                      :page_facing_up: script.js <br>
+:open_file_folder: utils <br>
+                   :page_facing_up: middlewares.js <br>
+:open_file_folder: views <br>
+                   :open_file_folder: partials <br>
+                   :page_facing_up: 404.ejs <br>
+                   :page_facing_up: index.ejs <br>
+                   :page_facing_up: profile.ejs <br>
+:page_facing_up: db.js <br>
+:page_facing_up: router.js <br>
+:page_facing_up: package.json <br>
+:page_facing_up: server.js <br>
 
 
 ## Usage
 
-For local Use 
+For local Use <br>
 
-Preliquisites : 
+Preliquisites : <br>
 :point_right: node version 18.16.x <br>
 :point_right: nodemon globally installed <br>
 
