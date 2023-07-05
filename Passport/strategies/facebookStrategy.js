@@ -20,7 +20,7 @@ const facebook = new FacebookStrategy({
     })
     await newUser.save()
   }
-    console.log("Facebook profile:",profile)
+    //console.log("Facebook profile:",profile)
     return done(null,profile)
 })
 

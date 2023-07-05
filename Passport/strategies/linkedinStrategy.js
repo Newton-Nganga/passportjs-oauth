@@ -10,7 +10,7 @@ const linkedin = new LinkedInStrategy({
   scope:['r_emailaddress','r_liteprofile']
 },(token,tokenSecret,profile,done)=>{
     
-    console.log("LinkedIn profile:",profile)
+   // console.log("LinkedIn profile:",profile)
    return done(null,profile)
 })
 
