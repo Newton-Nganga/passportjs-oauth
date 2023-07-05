@@ -4,6 +4,7 @@
   "description": "Social authentication using passportjs library with es6",
   "main": "server.js",
   "scripts": {
+    "build":"npm i && npm build",
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
