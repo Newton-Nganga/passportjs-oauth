@@ -141,6 +141,25 @@ body {
   }
 }
 
+.profile-body{
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #36363d;
+  font-family: var(--poppins);
+  max-width: 450px;
+}
+.profile-pic{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
 .fb {
   background-color: #1790c9 !important;
   color: aliceblue;
